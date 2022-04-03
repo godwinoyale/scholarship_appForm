@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <title>Scholarship Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scholarship Application Form</h1>
+        <p>Please fill out the form accordingly,  all fields marked <span><sup>*</sup></span> is compulsory.</p>
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <label for="fname">First Name<span><sup>*</sup></span></label>
+                    <input type="text" name="f_name" id="fName">
+                    <small id="fNameError"></small>
+                </div>
+                <div class="col">
+                    <label for="lname">Last Name<span><sup>*</sup></span></label>
+                    <input type="text" name="l_name" id="lName">
+                    <small id="lNameError"></small>
+                </div>
+               
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="age">Age<span><sup>*</sup></span></label>
+                    <select name="age" id="age">
+                        <option value="">Select your age</option>
+                        <option value="1">18-24years</option>
+                        <option value="2">25-30years</option>
+                        <option value="3">31-35years</option>
+                        <option value="4">36-40years</option>
+                        <option value="5">41years and above</option>
+                    </select>
+                    <small id="ageError"></small>
+                </div>
+                <div class="col">
+                    <label for="gender">Gender<span><sup>*</sup></span></label>
+                    <select name="gender" id="gender">
+                        <option value="">Select your sex</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select>
+                    <small id="genderError"></small>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="phoneNumber">Phone Number<span><sup>*</sup></span></label>
+                    <input type="text" name="phone" id="phoneNumber">
+                    <small id="phoneError"></small>
+                </div>
+                <div class="col">
+                    <label for="school">School<span><sup>*</sup></span></label>
+                    <input type="text" name="school" id="school">
+                    <small id="schoolError"></small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="country">Country<span><sup>*</sup></span></label>
+                    <select name="country" id="country">
+                        <option value="">Select your country</option>
+                        <option value="africa">Nigeria</option>
+                        <option value="africa">Ghana</option>
+                        <option value="africa">South Africa</option>
+                        <option value="asia">China</option>
+                        <option value="asia">Indonesia</option>
+                        <option value="asia">Japan</option>
+                        <option value="southAmerica">Brazil</option>
+                        <option value="southAmerica">Argentina</option>
+                        <option value="southAmerica">Colombia</option>
+                        <option value="northAmerica">United States</option>
+                        <option value="northAmerica">Canada</option>
+                        <option value="northAmerica">Mexico</option>
+                        <option value="others">France</option>
+                        <option value="others">Italy</option>
+                        <option value="others">Germany</option>
+                    </select>
+                    <small id="countryError"></small>
+                </div>
+                
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="english">English<span><sup>*</sup></span></label>
+                    <input type="text" placeholder="English" name="english" id="english" disabled="true">
+                    <small id="englishError"></small>
+                </div>
+                <div class="col">
+                    <label for="englishScore">Score<span><sup>*</sup></span></label>
+                    <input type="number" name="englishScore" id="englishScore">
+                    <small id="englishScoreError"></small>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="maths">Mathemathics<span><sup>*</sup></span></label>
+                    <input type="text" placeholder="MatheMathics" name="maths" id="maths" disabled="true">
+                    <small id="mathsError"></small>
+                </div>
+                <div class="col">
+                    <label for="mathScore">Score<span><sup>*</sup></span></label>
+                    <input type="number" name="mathScore" id="mathScore">
+                    <small id="mathScoreError"></small>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="sub3">Subject 3<span><sup>*</sup></span></label>
+                    <select name="sub3" id="sub3">
+                        <option value="">Select Subjects</option>
+                        
+                    </select>
+                    <small id="subject3Error"></small>
+                </div>
+                <div class="col">
+                    <label for="sub3Score">Score<span><sup>*</sup></span></label>
+                    <input type="number" name="sub3Score" id="sub3Score">
+                    <small id="sub3Error"></small>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="sub4">Subject 4<span><sup>*</sup></span></label>
+                    <select name="sub4" id="sub4">
+                        <option value="">Select Subjects</option>
+                        
+                    </select>
+                    <small id="subject4Error"></small>
+                </div>
+                <div class="col">
+                    <label for="sub4Score">Score<span><sup>*</sup></span></label>
+                    <input type="number" name="sub4Score" id="sub4Score">
+                    <small id="sub4Error"></small>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="sub5">Subject 5<span><sup>*</sup></span></label>
+                    <select name="sub5" id="sub5">
+                        <option value="">Select Subjects</option>
+                        
+                    </select>
+                    <small id="subject5Error"></small>
+                </div>
+                <div class="col">
+                    <label for="sub5Score">Score<span><sup>*</sup></span></label>
+                    <input type="number" name="sub5Score" id="sub5Score">
+                    <small id="sub5Error"></small>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="sub6">Subject 6<span><sup>*</sup></span></label>
+                    <select name="sub6" id="sub6">
+                        <option value="">Select Subjects</option>
+                        
+                    </select>
+                    <small id="subject6Error"></small>
+                </div>
+                <div class="col">
+                    <label for="sub6Score">Score<span><sup>*</sup></span></label>
+                    <input type="number" name="sub6Score" id="sub6Score">
+                    <small id="sub6Error"></small>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="sub7">Subject 7<span><sup>*</sup></span></label>
+                    <select name="sub7" id="sub7">
+                        <option value="">Select Subjects</option>
+                       
+                    </select>
+                    <small id="subject7Error"></small>
+                </div>
+                <div class="col">
+                    <label for="sub7Score">Score<span><sup>*</sup></span></label>
+                    <input type="number" name="sub7Score" id="sub7Score">
+                    <small id="sub7Error"></small>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="sub8">Subject 8<span><sup>*</sup></span></label>
+                    <select name="sub8" id="sub8">
+                        <option value="">Select Subjects</option>
+                       
+                    </select>
+                    <small id="subject8Error"></small>
+                </div>
+                <div class="col">
+                    <label for="sub8Score">Scores<span><sup>*</sup></span></label>
+                    <input type="number" name="sub8Score" id="sub8Score">
+                    <small id="sub8Error"></small>
+                </div>
+
+            </div>
+            <div>
+                <canvas id="myChart"></canvas>
+              </div>
+            <button type="button" id="regBtn">Submit</button>
+
+            
+
+
+        </form>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
